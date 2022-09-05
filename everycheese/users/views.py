@@ -24,6 +24,8 @@ user_detail_view = UserDetailView.as_view()
 class UserUpdateView(LoginRequiredMixin, UpdateView):
     fields = [
         "name",
+        #adding bio to list
+        "bio",
     ]
 
     # We already imported user in the View code above,
