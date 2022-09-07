@@ -84,8 +84,10 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    "everycheese.users.apps.UsersConfig",
+    "everycheese.users.apps.UsersConfig",  #custom users app
+    #adding everycheese.cheeses to LOCAL_APPS
     # Your stuff: custom apps go here
+    "everycheese.cheeses.apps.CheesesConfig" #cheese info app
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
