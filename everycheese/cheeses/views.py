@@ -6,3 +6,6 @@ from .models import Cheese
 # The Cheese model is imported using a relative import becuase we are importing from within the same app.
 class CheeseListView(ListView):
     model = Cheese
+
+class CheeseDetailView(DetailView):
+    model = Cheese

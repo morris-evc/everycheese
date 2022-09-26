@@ -10,6 +10,11 @@ urlpatterns = [
         view=views.CheeseListView.as_view(),
         name='list'
     ),
+    path(
+        route='<slug:slug>/',
+        view=views.CheeseDetailView.as_view(),
+        name='detail'
+    ),
 ]
 
 # to make this work have to add it in root URLConf. 
